@@ -1,0 +1,129 @@
+---
+title: "Aplicação do Cluster"
+lang: "pt"
+---
+
+Aqui será aplicado o cluster, com a utilização do algoritmo **k-means** (ou k-médias), para  se ter uma noção de como começar a saber com quantos clusters vamos aplicar o *método do cotovelo* e o *silhouette score*.
+
+Vimos que o modelo vai considerar a profissão com separação mais não leva eem grande conta os outros atributos, logo ele vai ser retirado e assim podemos fazer o perfil dos clientes de acordo com a profissão.
+
+Apliando o metdo de cotovelo, vemos que não há uma quebra no gráfico, mostrando que esse modo não vai ser eficaz, então vamos nos basear no silhouette score
+
+![Método do cotovelo](metodo_cotovelo.png)
+
+![Sillhouette score](silhouette_score.png)
+
+Podemos ver que com 5 temos uma pontuação boa, que é começaremos.
+
+## Avaliação
+
+Podemos ver, que em quantidade de elementos no cluster não se tem muita diferença entre eles.
+
+![](quantidade_cluster.png)
+
+Podemos ver que o cluster 3 tem gente mais nova, se comparado com os demais.
+
+![](idade_cluster.png)
+
+Quanto ao genero podemos ver que o cluster 0 só tem pessoas do gênero masculino e o cluster 2 só tem pessoas do gênero feminino.
+
+![](genero_cluster.png)
+
+Quanto ao genero, temos que do cluster 0 só tem pessoas do gênero masculino e o cluster 3 só temos pessoas do gênero feminino.
+
+![](pontua%C3%A7%C3%A3o_cluster.png)
+
+A pontuação os clusters 0 e 3 tem score baixo.
+
+![](membro_cluster.png)
+
+Quanto aos membro, observa-se que o cluster 1 a maioria mora sozinho, se comparado com os outros.
+
+![](graduacao_cluster.png)
+
+O cluster 0 e 2 só tem pessoas com graduação, o 4 só tem pessoa sem graduação, enquanto a maioria tem graduação e o cluster 3 a maioria não tem graduação
+
+O cluster 3 tem a maioria da área da saúde.
+
+![](profissao_cluster.png)
+
+## Conclusão
+
+Com base na avaliação feita, podemos ver que os cinco cluster ficaram da seguinte forma
+
+- **Cluster 0**
+  - Maioria entre 20 e 60 anos
+  - Com graduação
+  - Casados
+  - A maioria tem em casa ao total duas pessoas, incluindo o cliente
+  - Somente pessoas do gênero masculino
+
+- **Cluster 1**
+  - 20 a 50 em sua maioria
+  - Maioria com graduação
+  - Solteiros
+  - Moram sozinhos em sua maioria
+  - Tem pontuação baixa
+
+- **Cluster 2**
+  - 20 a 90 anos
+  - Tem graduação
+  - Somente pessoas do gênero feminino
+  - Moram ela e mais uma pessoa, pelo menos em sua maioria
+
+- **Cluster 3**
+  - 20 a 40 anos
+  - Maioria sem graduação
+  - Pontuação baixa
+  - Moram ao total em casa (incluindo o cliente) de 3 a 5 pessoas em sua maioria
+  - Em sua maioria trabalham na área da saúde
+
+- **Cluster 4**
+  - Sem graduação
+  - Casados
+  - 2 pessoa em sua maioria moram em casa (contando o cliente)
+
+Poderia se juntar os clusters 0 e 2 ficando 4 clusters dependendo da análise ou depender de uma análise mais profunda que esses dois peris tem os mesmo interesses. Então os clusters ficariam assim.
+
+- **Cluster 0**
+  - Maioria entre 20 e 60 anos
+  - Com graduação
+  - Casados
+  - A maioria tem em casa ao total duas pessoas, incluindo o cliente
+
+- **Cluster 1**
+  - 20 a 50 em sua maioria
+  - Maioria com graduação
+  - Solteiros
+  - Moram sozinhos em sua maioria
+  - Tem pontuação baixa
+
+- **Cluster 2**
+  - 20 a 40 anos
+  - Maioria sem graduação
+  - Pontuação baixa
+  - Moram ao total em casa (incluindo o cliente) de 3 a 5 pessoas em sua maioria
+  - Em sua maioria trabalham na área da saúde
+
+
+- **Cluster 3**
+  - Sem graduação
+  - Casados
+  - 2 pessoa em sua maioria moram em casa (contando o cliente)
+
+Dependendo o tamanho da empresa, e se houver poucas profisões, poderia se levra em consideração as profissões, pois é um atributo importante e deve ser levado em consideração.
+
+Fazendo uma projeção dos clusters usando o t-SNE, podemos ver que há uma região bem separada entre os clusters, mostrando que houve um boa separação do algoritmo.
+
+![](tsne_cluster.png)
+
+## Possibilidades
+
+Com esses resultados, a gestão pode pegar esse dados e fazer as seguintes coisas
+
+- Pensar em um marketing diferente para cada perfil
+- Enviar cupons de descontos de forma personalizada
+- Permitir invetigar porque certos perfis tem pontuação baixa como o cluster 1 e o cluster 3 (considerando a divisão de 5 clusters)
+- Investigar quais são os produtos consumidos para cada perfil.
+
+Lembrando que não há um certo e um errado na análise de cluster, isso precisa ser visto pela empresa e ver se validam o que foi obtido pela análise, e que uma análise vai obter depende da análise que queira se faze,  e que isso foi um exemplo, pode ser uma determindo contexto faça sentido, ou para outro o de quatro faça mais sentido ou nem precisa se utilizar, tudo isso depende de uma séries de fatores.

@@ -1,0 +1,110 @@
+---
+title: "Análise Exploratória"
+lang: "pt"
+---
+
+Nesta página está uma análise geral feita antes da que aplicação do cluster, com o objetivo de se analisar e trazer insigths e qual seria o melhor pré-tratamento antes de se aplicar o algoritmo
+
+Se quiser ver o código clique [aqui](https://github.com/gustavoramos82/Analise-de-cluster-software-livre/blob/main/An%C3%A1lise.ipynb)
+
+## Análise univariada
+
+Aqui vamos observar a distribuição dos dados das variaveis.
+
+![](idade.png)
+
+Vemos que a maioria dos clientes tem entre uns 25 a 30 anos, e também temos muitos clientes em torno de 50 anos.
+
+![](casado.png)
+
+Pode ver que tem mais casados do que solteiros, com uma diferença d emil pessoas, aproximadamente.
+
+![](familia.png)
+
+Em questão de familia, moram em casa, incluindo o cliente, até quatro pessoas em sua maioria, ou seja moram poucas pessoa em casa, podemos ver que mais de 2 mil tem duas pessoa em casa, ou seja ele e uma outra pessoa.
+
+![](genero.png)
+
+Em questão de gênero, temos mais homens que mulheres, apesar de que a diferença entre isso é pequena, pode se fazer uma filtragem se determinado genero tem preferências, comparando os resultados.
+
+![](gradua%C3%A7%C3%A3o.png)
+
+Em questão de graduação, podemos ver que a maioria possui uma graduação.
+
+![](profissao.png)
+
+A maioria do cliente são artistas, mostrando que pode haver certos produtos que pode ser direcionado a eles ou qual seriam as suas preferências.
+
+![](pontual.png)
+
+Verifica-se que grande parte dos clientes tem uma pontuação baixa, então precisa saber o porquê disso e se o gestor pode fazer alguma campanha ou promoção com o objetivo de aumentar essa pontuação.
+
+## Análise Bivariada
+
+### Análise de acordo com o gênero
+
+Aqui, iremos fazer uma análise de acordo com o gênero do cliente, para ver se há alguma diferença e preferências.
+
+![](profissao_genero.png)
+
+Podemos ver isso em questão de profissão, em que tem mais homens como executivos, e no entretenimento e muitas mulheres como engenheiras e trabalhando em casa
+
+Quanto aos outros, não vemos muitas diferenças então aqui só mostrarei em que de fato o atribto trouxer alguma diferença
+
+###  Análise de acordo com a pontuação
+
+![](casado_pontuacao.png)
+
+Quando a pontuação, podemos ver que todos que estão solteiros tem uma pontuação baixa, além de quem mora sozinho também tem pontuação baixa em sua grande maioria, como pode ser visto no gráfico abaixo.
+
+![](familia_pontuacao.png)
+
+![](idade_pontuacao.png)
+
+Em relação a idade, vemos que, que há uma diferença, sendo que tem pontuação baixa tem entre 20 e poucos anos, médio já está pra cerca de 40 a uns 50 anos e alta de 40 a 80 anos, logo é mais jovem tende a ter uma pontuação mais baixa, pode ser que começaram ano mercado de trabalho e não tem um poder aquisitivo para comprar muita coisa.
+
+![](profissao_pontuacao.png)
+
+Isso também pode ser visto de acordo com a profissão dos clientes, quem trabalha com saúde, tem muito mais gente com pontuação baixa, enquanto executivos tem mais gente com pontuação alta e artistica tem poucas pessoas com pontuação alta.
+
+### Análise de acordo com o estado civil
+
+![](graduacao_casado.png)
+
+podemos ver uma grande maioria de quem é casado tem graduação, se comparado a quem é solteiro.
+
+![](profissao_casado.png)
+
+Podemos ver que artistas uma grande maioria é casado, enquanto quem trabalha com saúde na sua maioria é solteiro.
+
+![](idade_casado.png) 
+
+E quem é solterio costuma ser mais novo do que é casado, mostrando, isso também é com membros da casa, e quem é casado, a mior tem duas pessoa, ou seja, a pessoa mais o companheiro(a).
+
+![](membro_casado.png)
+
+## Análise de acordo com a profissão
+
+![](idade_profissao.png)
+
+Podemos ver, que de acordo com a profissão, tem-se uma certa idade, um exemplo é quem é da área da saúde costuma ser mais novo, enquanto, quem é da área do Direito costuma ser mais velho, ou seja, podemos ver que a profissão é um elemento que pode ser levado em consideração, para se levar na modelagem.
+
+![](profissao_idade_pontu.png)
+
+Olhando pra isso podemos ver que quando temos um certa relação de quem tem score mais baixa, tender a ser mais jovem em certas profissões se comparada com outras.
+
+![](membro_idade.png)
+
+Podemos ver que há uma diminuição a partir 3 há uma diminuição na idade, e podemos ver que tem uma certa tendência de mais velho tem uma quantidade de mmbros de familia menor
+
+
+## Conclusão
+
+Com esta breve análise, podemos ver que a maioria das pessoas :
+
+- Tem 2 pessoas em casa e se mora sozinha, tem grande chance de ter uma pontuação baixa, além de que ser solteiro todos tem pontuação baixa
+- Maior parte são casadas e tem uma graduação
+- A profisso é um atributo muito importante para análise e deve ser levado muito em consideração nas estratégias
+-A idade dos clientes ta em 30 a 40 anos, aproximadamente
+
+Com esses dados em mostra, vamos fazer o processo de cluster para identificar o perfildos clientes.

@@ -1,0 +1,46 @@
+---
+title: "Analise de cluster"
+author: "Gustavo Ramos"
+date: 09/16/23
+lang: pt
+---
+
+# Sobre a análise de cluster
+
+Nesta página será explicitado os procedimentos da análise de cluster de como foi feito desde a análise exploratória até a aplicação de cluster, todos os códigos pode ser visto no repositório do meu Github, na qual pode da uma olhada se quiser olhar de como foi feito acessando [aqui](https://github.com/gustavoramos82/Analise-de-cluster-software-livre) para acessar o repositório.
+
+Será utilizado a lingugem *Python* para fazer a análises e usar o modelo utilizando as seguintes blibiotecas
+
+- **Pandas**: Biblioteca que permite trabalhar com tabelar e fazer manipulações na mesma
+- **Matplotlib**: Biblioteca de gráficos
+- **Seaborn**: Outra blibioteca de gráficos, tendo o *matplotlib* como base, mas o *seaborn* tem uma melhor integração com o *pandas*, vamos utilizar o *seaborn* para montar o gráfico e o *matplotlib* para alterar algumas coisas no gráfico.
+- **Scikit-learn**: Blinioteca de machine learning onde tem o kmeans (algoritmo de cluster utilizado)
+- **Yellowbrick**: Blibioteca para visualização dos modelos de machine learning
+
+## Tópicos
+
+Se você quiser acessar por arquivos lá no github para cada verificar os códigos aqui está o nome dos arquivos
+
+- **Cluster Software livre.pptx** o arquivo da apresentação (clique [aqui](https://github.com/gustavoramos82/Analise-de-cluster-software-livre/blob/main/Cluster%20Software%20livre.pptx) para acessar os códigos)
+- **juntando os dataframes.ipynb** um preparação dos dados removendo os dados em branco e valores duplicados e juntando os dois dataframes (tabelas) para ter uma para usar para análise exploratória e de cluster (clique [aqui](https://github.com/gustavoramos82/Analise-de-cluster-software-livre/blob/main/juntando%20os%20dataframes.ipynb)para acessar aos códigos)
+- **Análise.ipynb** é onde foi feito a análise exploratória (clique [aqui](https://github.com/gustavoramos82/Analise-de-cluster-software-livre/blob/main/An%C3%A1lise.ipynb)para acessar aos códigos)
+- **Clusterização_seg_clientes.ipynb**: Arquivo onde se tem a utilização da análise de cluster (clique [aqui](https://github.com/gustavoramos82/Analise-de-cluster-software-livre/blob/main/Clusteriza%C3%A7%C3%A3o_seg_clientes.ipynb) para).
+
+## Sobre o dataset
+
+O dataset utilizado como exemplo foi obtido no *kaggle* (que pode ser obtido [aqui](https://www.kaggle.com/datasets/vetrirah/customer))
+
+A proposta original que tá na página tem o de treino e teste em que vai ser feito o algoritmo de classificação para colocar os clientes em uma dada categoria.
+Mas aqui será usado para agrupar com objetivo de *conhecer o perfil dos clientes que compra em um mercado* por isso se juntou as duas tabelas e vai trabaçhar com as seguintes coluna que vai ser falado logo abaixo
+
+## Dicionário dos dados
+
+- **Gender**: Gênero do cliente
+- **Ever_Married**: se está casado ou não
+- **Age**: Idade do cliente
+- **Graduated**: Se é graduado ou não
+- **Work_Experience**: anos de experiência no trabalho do cliente
+- **Spending_Score**: Pontuação de gastos do cliente
+- **Family_size**: Número de membros da família do cliente (incluindo o cliente)
+
+Com isso será vistos na páginas seguintes a análise e o exemplo de cluster.

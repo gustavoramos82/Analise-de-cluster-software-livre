@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "d84b76ffeb571b22",
+    "type": "split",
+    "children": [
+      {
+        "id": "d286ee95bc1bffb2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7bfed240b64c77b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Análise de cluster.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7cfa887f7a41902f",
+    "type": "split",
+    "children": [
+      {
+        "id": "fab44172b084232f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2c0c6b6101891388",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "469fab24c45b282d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "11fe7ae14ae9f6f4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9fed3b9ebc0eeb86",
+    "type": "split",
+    "children": [
+      {
+        "id": "55bba054eab45a69",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bf0816a8fabedb98",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Análise de cluster.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6d7b679ca17bf2d0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Análise de cluster.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dbf02e25fc32f135",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1a89b8dffddd7028",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Análise de cluster.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "f7bfed240b64c77b",
+  "lastOpenFiles": [
+    "Análise de cluster.pdf",
+    "Análise de cluster.md"
+  ]
+}
