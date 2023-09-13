@@ -20,3 +20,7 @@ Vai ser utilizado dos dados vai ser utilizdos essas 7 colunas, sendo essas:
 - **Work_Experience**: anos de experiência no trabalho do cliente
 - **Spending_Score**: Pontuação de gastos do cliente
 - **Family_size**: Número de membros da família do cliente (incluindo o cliente)
+
+## Acesse o site
+
+Se quiser ler com mais detalhes sem olhar o código, clique [aqui](https://clustersoftwarelivre.netlify.app) para acessar
